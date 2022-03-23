@@ -1,0 +1,33 @@
+{% extends "base.html" %} {% block title %}Update Player Information{% endblock %} {% block
+content %}
+
+
+<form method="POST" xmlns="http://www.w3.org/1999/html">
+    <br>
+  <h3 align="center">Player Information</h3>
+  <div class="form-group">
+    <label for="height">Height</label>
+    <input
+      type="number"
+      class="form-control"
+      id="height"
+      name="height"
+      placeholder="Enter height"
+    />
+  </div>
+
+  <div class="form-group">
+    <label for="weight">Weight</label>
+    <input
+      type="number"
+      class="form-control"
+      id="weight"
+      name="weight"
+      placeholder="Enter weight"
+    />
+  </div>
+
+<br>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+{% endblock %}

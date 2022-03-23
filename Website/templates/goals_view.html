@@ -1,0 +1,45 @@
+{% extends "base.html" %} {% block title %}Player Goals{% endblock %} {% block
+content %}
+<br />
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Yearly Goals</h5>
+        <p class="card-text">{{ yearlyGoal.data }}</p>
+        <a href="#" class="btn btn-primary">Coach Feedback Link</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Planned Execution</h5>
+        <p class="card-text">{{ yearlyPlan.data }}</p>
+        <a href="#" class="btn btn-primary">Coach Feedback Link</a>
+      </div>
+    </div>
+  </div>
+</div>
+<br />
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Long Term Goals</h5>
+        <p class="card-text">{{ longGoal.data }}</p>
+        <a href="#" class="btn btn-primary">Coach Feedback Link</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Long Term Planned Execution</h5>
+        <p class="card-text">{{ longPlan.data }}</p>
+        <a href="#" class="btn btn-primary">Coach Feedback Link</a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends "base.html" %} {% block title %}Player Goals{% endblock %} {% block
+content %}
+<form method="POST" xmlns="http://www.w3.org/1999/html">
+    <br>
+  <h3 align="center">Player Goals</h3>
+  <div class="form-group">
+    <label for="yearlyGoals">What are your goals for the year?</label>
+    <textarea class="form-control" id="yearlyGoals" name="yearlyGoals" rows="5" placeholder="Expand on what you want to accomplish & how you want to improve this year"></textarea>
+  </div>
+    <br />
+    <div class="form-group">
+    <label for="yearlyPlan">How are you going to accomplish your yearly goals?</label>
+    <textarea class="form-control" id="yearlyPlan" name="yearlyPlan" rows="5" placeholder="Expand on how you plan on executing your goals."></textarea>
+  </div>
+    <br />
+    <div class="form-group blue-border">
+    <label for="longGoals">What are your long term hockey goals?</label>
+    <textarea class="form-control" id="longGoals" name="longGoals" rows="5" placeholder="Where do you want to play in for the next 5 years? Dream big!"></textarea>
+  </div>
+        <br />
+    <div class="form-group blue-border">
+    <label for="longPlan">How are you going to accomplish your long term goals</label>
+    <textarea class="form-control" id="longPlan" name="longPlan" rows="5" placeholder="What do you need to do to achieve these goals? Specify areas of improvement & idea on how you plan on improving."></textarea>
+  </div>
+
+  <br />
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+{% endblock %}

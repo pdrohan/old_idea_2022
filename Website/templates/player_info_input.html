@@ -1,0 +1,61 @@
+{% extends "base.html" %} {% block title %}Update Player Information{% endblock %} {% block
+content %}
+
+
+<form method="POST" xmlns="http://www.w3.org/1999/html">
+    <br>
+  <h3 align="center">Player Information</h3>
+  <div class="form-group">
+    <label for="height">Height</label>
+    <input
+      type="number"
+      class="form-control"
+      id="height"
+      name="height"
+      placeholder="Enter height"
+    />
+  </div>
+
+  <div class="form-group">
+    <label for="weight">Weight</label>
+    <input
+      type="number"
+      class="form-control"
+      id="weight"
+      name="weight"
+      placeholder="Enter weight"
+    />
+  </div>
+
+ <div class = "btn-group">
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="shootDir" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Which way do you shoot?
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Left</a>
+    <a class="dropdown-item" href="#">Right</a>
+  </div>
+</div>
+ </div>
+
+    <div class = "btn-group">
+    <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="position" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    What position do you play?
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Center</a>
+    <a class="dropdown-item" href="#">Right Wing</a>
+      <a class="dropdown-item" href="#">Left Wing</a>
+      <a class="dropdown-item" href="#">Defense</a>
+      <a class="dropdown-item" href="#">Goalie</a>
+  </div>
+
+    </div>
+
+    </div>
+<br>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+{% endblock %}
